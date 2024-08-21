@@ -121,7 +121,13 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+    "Landed Cost Voucher": {
+        "on_submit": "landed_cost.overrides.landed_cost_voucher.create_purchase_invoice_from_landed_cost",
+       
+    
+    },
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
