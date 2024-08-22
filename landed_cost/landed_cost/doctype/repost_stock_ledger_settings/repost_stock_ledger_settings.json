@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2024-08-21 21:29:16.922828",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "allowed_types"
+ ],
+ "fields": [
+  {
+   "fieldname": "allowed_types",
+   "fieldtype": "Table",
+   "label": "Allowed Doctypes",
+   "options": "Repost Allowed Types"
+  }
+ ],
+ "in_create": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-21 21:29:16.922828",
+ "modified_by": "Administrator",
+ "module": "Landed Cost",
+ "name": "Repost Stock Ledger Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "select": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

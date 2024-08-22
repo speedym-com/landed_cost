@@ -29,6 +29,9 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+
+doctype_js = {"Stock Entry" : "public/js/stock_entry.js"}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -118,16 +121,20 @@ app_license = "mit"
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+override_doctype_class = {
+	"Stock Entry": "landed_cost.overrides.stock_entry.CustomStockEntry"
+}
+
 # Document Events
 # ---------------
 # Hook on document methods and events
-doc_events = {
-    "Landed Cost Voucher": {
-        "on_submit": "landed_cost.overrides.landed_cost_voucher.create_purchase_invoice_from_landed_cost",
+# doc_events = {
+#     "Landed Cost Voucher": {
+#         "on_submit": "landed_cost.overrides.landed_cost_voucher.create_purchase_invoice_from_landed_cost",
        
     
-    },
-}
+#     },
+# }
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
